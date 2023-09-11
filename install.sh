@@ -12,3 +12,5 @@ ln -rs waybar/ ~/.config/
 ln -rs scripts/ ~/.config/
 ln -rs rofi/ ~/.config/
 ln -rs nvim/ ~/.config/
+
+ln -rs zsh/.zshrc ~/.
