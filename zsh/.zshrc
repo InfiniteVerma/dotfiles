@@ -125,6 +125,7 @@ source ~/.private_shell_aliases
 ## tmux 
 #########################################
 alias ta="tmux attach"
+alias tl="tmux ls"
 alias ts="bash ~/.config/scripts/tmux-sessionizer"
 #########################################
 
