@@ -2,7 +2,7 @@
 echo "Symlinking stuff to .config"
 
 sudo pacman -Syu
-sudo pacman -S fzf
+sudo pacman -S fzf ripgrep
 
 rm -rf ~/.config/rofi
 rm -rf ~/.config/hypr
