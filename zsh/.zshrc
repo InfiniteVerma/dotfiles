@@ -114,6 +114,23 @@ alias gd="git diff"
 
 alias f="find . -name $1"
 
+# Function to update system using Pacman and AUR packages using Yay
+update_system() {
+    # Update system using Pacman
+    echo "Updating system with Pacman..."
+    sudo pacman -Syu
+
+    # Update AUR packages using Yay
+    echo "Updating AUR packages with Yay..."
+    yay -Syu
+
+    echo "All packages updated!"
+}
+
+# Alias for the update_system function
+alias upd=update_system
+
+
 ##########################################
 ## other aliases 
 ##########################################
@@ -133,6 +150,7 @@ alias ts="bash ~/.config/scripts/tmux-sessionizer"
 
 ## Add kdesrc-build to PATH
 export PATH="/home/anant/kde/src/kdesrc-build:$PATH"
+export PATH="/home/anant/dev/llvm-project/build/bin:$PATH"
 
 ## Autocomplete for kdesrc-run
 function _comp_kdesrc_run

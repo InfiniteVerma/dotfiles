@@ -56,3 +56,8 @@ vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
 
+-- pretty printing table
+P = function(v)
+    print(vim.inspect(v))
+    return v
+end

@@ -1,6 +1,9 @@
 # symlinking
 echo "Symlinking stuff to .config"
 
+sudo pacman -Syu
+sudo pacman -S fzf
+
 rm -rf ~/.config/rofi
 rm -rf ~/.config/hypr
 rm -rf ~/.config/waybar
