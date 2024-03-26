@@ -194,3 +194,5 @@ export NVM_DIR="$HOME/.nvm"
 
 # Added by GDK bootstrap
 source /home/anant/.asdf/asdf.sh
+
+#bindkey -v

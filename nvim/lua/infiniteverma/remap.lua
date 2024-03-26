@@ -61,3 +61,15 @@ P = function(v)
     print(vim.inspect(v))
     return v
 end
+
+vim.keymap.set('n', '<leader>rs', [[:%s/\s\+$//g<CR>]], { noremap = true, silent = true })
+
+function show_func_name()
+  local cursor_pos = vim.fn.getpos('.')
+  local line_content = vim.fn.matchstr(vim.fn.getline(vim.fn.search("^[^ \t#/]\\{2}.*[^:]\\s*$", 'bW')), '.*[^:]\\s*$')
+  vim.api.nvim_out_write(line_content .. '\n')
+  vim.fn.setpos('.', cursor_pos)
+end
+
+vim.api.nvim_set_keymap('n', 't', ':lua show_func_name()<CR>', { noremap = true, silent = true })
+
