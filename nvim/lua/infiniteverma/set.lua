@@ -37,3 +37,6 @@ vim.opt.colorcolumn = "80"
 
 vim.g.mapleader = " "
 
+-- Enable text wrapping for Markdown files
+vim.cmd('autocmd FileType markdown setlocal wrap')
+
