@@ -40,3 +40,5 @@ vim.g.mapleader = " "
 -- Enable text wrapping for Markdown files
 vim.cmd('autocmd FileType markdown setlocal wrap')
 
+vim.api.nvim_set_keymap('n', '<leader>pv', ':E<CR>', { noremap = true, silent = true })
+
