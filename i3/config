@@ -215,6 +215,8 @@ bar {
 }
 #exec_always --no-startup-id polybar #--config=~/.config/polybar/config.ini mybar
 
+exec xinput set-prop ELAN0710:00 04F3:30ED Touchpad libinput Tapping Enabled 1
+
 
 #######################################################################
 # automatically start i3-config-wizard to offer the user to create a
