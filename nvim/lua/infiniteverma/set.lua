@@ -17,8 +17,8 @@ vim.opt.wrap = false
 
 --vim.opt.swapfile = false
 --vim.opt.backup = false
---vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
---vim.opt.undofile = true
+vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.undofile = true
 
 vim.opt.hlsearch = false
 -- incremental search
@@ -42,4 +42,5 @@ vim.cmd('autocmd FileType markdown setlocal wrap')
 --vim.cmd('set hls')
 
 --vim.api.nvim_set_keymap('n', '<leader>pv', ':E<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>u', ':UndotreeToggle<CR>', { noremap = true, silent = true })
 
