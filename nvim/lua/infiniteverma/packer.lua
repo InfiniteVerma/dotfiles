@@ -10,8 +10,7 @@ return require('packer').startup(function(use)
     use 'mbbill/undotree'
 
 	use {
-		'nvim-telescope/telescope.nvim', tag = '0.1.2',
-		-- or                            , branch = '0.1.x',
+		'nvim-telescope/telescope.nvim',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 
