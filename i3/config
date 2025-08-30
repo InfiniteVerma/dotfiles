@@ -66,7 +66,7 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec konsole # i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+q kill
@@ -229,3 +229,9 @@ exec xinput set-prop ELAN0710:00 04F3:30ED Touchpad libinput Tapping Enabled 1
 # Please remove the following exec line:
 #######################################################################
 exec i3-config-wizard
+
+#bindsym $mod+Shift+s exec --no-startup-id grim -g "$(slurp)" ~/Pictures/screenshot_$(date +%Y-%m-%d-%H-%M-%S).png
+bindsym $mod+Shift+s exec --no-startup-id maim ~/Pictures/screenshot_$(date +%Y-%m-%d-%H-%M-%S).png
+exec_always --no-startup-id ~/.config/i3/monitor-setup.sh
+exec --no-startup-id dunst
+

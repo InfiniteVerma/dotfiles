@@ -111,6 +111,7 @@ alias vi="vim"
 alias vim="nvim"
 alias gs="git status"
 alias gd="git diff"
+alias gdc="git diff --cached"
 
 alias f="find . -name $1"
 
@@ -196,3 +197,7 @@ export NVM_DIR="$HOME/.nvm"
 source /home/anant/.asdf/asdf.sh
 
 #bindkey -v
+set -o vi
+bindkey '^R' history-incremental-search-backward
+
+[[ ! -r '/home/anant/.opam/opam-init/init.zsh' ]] || source '/home/anant/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
